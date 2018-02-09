@@ -120,11 +120,26 @@
 
 .min-price{
   margin-left: 110px;
+  text-align: center;
 }
 
 .max-price{
   margin-right: 45px;
+  text-align: center;
 }
+
+.range-interval{
+  margin-top: 30px;
+}
+
+#slider-range{
+  height: 7px;
+  width: 300px;
+  margin: auto;
+  
+  border: none;
+}
+
 
 .min-floor,.max-floor{
   width: 80px;

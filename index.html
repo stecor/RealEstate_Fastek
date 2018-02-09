@@ -6,8 +6,12 @@
     <title>Fastek</title>
     <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
   </head>
   <body>
     <div class="container-fluid">
@@ -31,9 +35,12 @@
           <button type="button" name="button" class="buttonX ">X</button>
           <div class="select price mx-auto">Price</div>
           <div class="range-price row">
-            <input class="min-price"/>
+            <input class="min-price" id="min-price" />
             <div class="divisory mx-auto"></div>
-            <input class="max-price"/><span class="label-eur" >Eur</span>
+            <input class="max-price" id="max-price"/><span class="label-eur" >Eur</span>
+          </div>
+          <div class="range-interval">
+            <div id="slider-range"></div>
           </div>
           <div class="select floor mx-auto">Floor</div>
           <div class="range-floor row">
