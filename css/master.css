@@ -1,0 +1,164 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Roboto");
+
+.search-body{
+  border: 1px solid #DCDCDC;
+}
+
+.search{
+  height: 100px;
+  padding: 30px;
+}
+
+.search input{
+  border: 1px solid #DCDCDC;
+  width: 400px;
+  border-radius: 5px;
+  margin-left: 200px;
+  height: 40px;
+  font-size: 1em;
+  font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+::placeholder {
+    color: 	#DCDCDC;
+    opacity: 1; /* Firefox */
+    text-indent: 20px;
+    -webkit-text-stroke: 1px background-color;
+}
+
+.logo{
+  height: 100px;
+  padding: 35px;
+}
+
+.burguer{
+  margin-top: 0px;
+  border-right: 1px solid #DCDCDC;
+  height: 100px;
+}
+
+.menu{
+  border-bottom: 1px solid #DCDCDC;
+  padding: 30px;
+}
+
+.buy{
+  border-radius: 7px;
+  font-size: .9em;
+  width: 100px ;
+  height: 35px;
+  color: #fff ;
+  background-color:  #566062;
+}
+
+.rent{
+  border-radius: 7px;
+  font-size: .9em;
+  width: 100px ;
+  height: 35px;
+  color: #fff;
+  background-color:  #566062;
+}
+
+.principal{
+  height: 800px;
+}
+
+.settings{
+  background-color: #566062;
+  height: 850px;
+}
+
+.gallery{
+  background-color: #F3F3F3;
+  height: 850px;
+}
+
+.buttonX{
+  background-color: #666E70;
+  border: none;
+  margin-top: 50px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+.col-centered{
+   text-align: center;
+}
+
+.select{
+  width: 350px;
+  height: 60px;
+  background-color: #4D5557;
+  color: #fff;
+  text-align: left;
+  font-size: .9em;
+  padding-top: 17px;
+  padding-left: 30px;
+}
+
+.price, .floor, .space, .other{
+  margin-top: 30px;
+}
+
+.rooms, .extras{
+  margin-top: 3px;
+}
+
+.min-price,.max-price{
+  width: 80px;
+  height: 35px;
+  background-color: #fff;
+  color: gray;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.min-price{
+  margin-left: 110px;
+}
+
+.max-price{
+  margin-right: 45px;
+}
+
+.min-floor,.max-floor{
+  width: 80px;
+  height: 35px;
+  background-color: #fff;
+  color: gray;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}
+
+.min-floor{
+  margin-left: 110px;
+}
+
+.max-floor{
+  margin-right: 30px;
+}
+
+.label-eur{
+  color: #09AEDC;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+.label-floor{
+  color: #fff;
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+.divisory{
+  border: 1px solid #fff;
+  margin-top: 45px;
+  height: 0px;
+  width: 10px;
+}
