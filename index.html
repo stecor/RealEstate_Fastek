@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+    <script type="text/javascript" src="/js/popper.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/main.js"></script>
   </head>
@@ -33,7 +33,16 @@
       <section class="principal row">
         <div class="settings col-sm-3 col-centered ">
           <button type="button" name="button" class="buttonX ">X</button>
-          <div class="select price mx-auto">Price</div>
+
+          <select name="price" class="select price mx-auto rounded">
+            <option disabled selected ><p >Price</p></option>
+            <option>Pizza</option>
+            <option>Grocerie</option>
+            <option>Bakery</option>
+            <option>Market</option>
+            <option>Other</option>
+          </select>
+
           <div class="range-price row">
             <input class="min-price" id="min-price" />
             <div class="divisory mx-auto"></div>
@@ -42,15 +51,49 @@
           <div class="range-interval">
             <div id="slider-range"></div>
           </div>
-          <div class="select floor mx-auto">Floor</div>
+
+          <select name="floor" class="select floor mx-auto rounded">
+            <option disabled selected ><p >Floor</p></option>
+            <option>Pizza</option>
+            <option>Grocerie</option>
+            <option>Bakery</option>
+            <option>Market</option>
+            <option>Other</option>
+          </select>
+
           <div class="range-floor row">
             <input class="min-floor"/>
             <div class="divisory mx-auto"></div>
             <input class="max-floor"/><span class="label-floor" >Floor</span>
           </div>
-          <div class="select space mx-auto">Space (m2)</div>
-          <div class="select rooms mx-auto">Rooms</div>
-          <div class="select extras mx-auto">Extras</div>
+
+          <select name="space" class="select space mx-auto rounded">
+            <option disabled selected ><p >Space (m2)</p></option>
+            <option>Pizza</option>
+            <option>Grocerie</option>
+            <option>Bakery</option>
+            <option>Market</option>
+            <option>Other</option>
+          </select>
+
+          <select name="rooms" class="select rooms mx-auto rounded">
+            <option disabled selected ><p >Rooms</p></option>
+            <option>Pizza</option>
+            <option>Grocerie</option>
+            <option>Bakery</option>
+            <option>Market</option>
+            <option>Other</option>
+          </select>
+
+          <select name="extras" class="select extras mx-auto rounded">
+            <option disabled selected ><p >Extras</p></option>
+            <option>Pizza</option>
+            <option>Grocerie</option>
+            <option>Bakery</option>
+            <option>Market</option>
+            <option>Other</option>
+          </select>
+
           <div class="checkcol">
             <div class="checkrow"><input type="checkbox" name="wi-fi" id="wifi" class="checkbox"/><label class="checkname">Wi-fi</label></div>
             <div class="checkrow"><input type="checkbox" name="jacuzzi" id="jacuzzi" class="checkbox"/><label class="checkname">jacuzzi</label></div>
@@ -58,8 +101,29 @@
             <div class="checkrow"><input type="checkbox" name="fireplace" id="fireplace" class="checkbox"/><label class="checkname">fireplace</label></div>
             <div class="checkrow"><input type="checkbox" name="pool" id="pool" class="checkbox"/><label class="checkname">pool</label></div>
           </div>
-          <div class="select other mx-auto">Other</div>
-          
+
+            <select name="other" class="select other mx-auto rounded">
+              <option disabled selected ><p >Other</p></option>
+              <option>Pizza</option>
+              <option>Grocerie</option>
+              <option>Bakery</option>
+              <option>Market</option>
+              <option>Other</option>
+            </select>
+
+
+            <select name="food-delivery" class="select food-delivery mx-auto ">
+               <option disabled selected >Food delivery</option>
+               <option>Pizza</option>
+               <option>Grocerie</option>
+               <option>Bakery</option>
+               <option>Market</option>
+               <option>Other</option>
+             </select>
+
+              <div class="hr"></div>
+
+              <div class="btn-search-pos"><button type="button" name="button" class="btn-search">SEARCH</button></div>
         </div>
         <div class="gallery col-sm-9">
         </div>

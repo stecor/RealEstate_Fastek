@@ -13,4 +13,8 @@ $( function() {
     });
     $( "#min-price" ).val(  $( "#slider-range" ).slider( "values", 0 ) );
     $( "#max-price" ).val(  $( "#slider-range" ).slider( "values", 1 ) );
+
+    //dropdown menus
+    //$( "#other" ).selectmenu();
+    //$( "#food-delivery" ).selectmenu();
   } );

@@ -1,5 +1,6 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-@import url("//fonts.googleapis.com/css?family=Roboto");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300|Roboto");
+
 
 .search-body{
   border: 1px solid #DCDCDC;
@@ -96,8 +97,16 @@
   color: #fff;
   text-align: left;
   font-size: .9em;
-  padding-top: 17px;
-  padding-left: 30px;
+  -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none;
+ padding: 2px 2px 2px 30px;
+ border: none;
+ background: #4D5557 url("/images/br_down.png") no-repeat 300px center;
+}
+
+:focus {
+    outline: none !important;
 }
 
 .price, .floor, .space, .other{
@@ -116,6 +125,12 @@
   border-radius: 5px;
   border: none;
   margin-top: 30px;
+  vertical-align: middle;
+
+}
+
+.rounded{
+  border-radius: 0;
 }
 
 .min-price{
@@ -198,4 +213,36 @@
 .checkcol{
   margin-top: 30px;
   margin-left: 50px;
+}
+
+.food-delivery{
+  margin-top: 30px;
+  background-color: #fff;
+  color: gray;
+  width: 200px;
+  height: 40px;
+}
+
+.hr {
+  width: 90%;
+  border-top: 3px solid #4D5557;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.btn-search{
+  margin-top: 30px;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #09AEDC;
+  color: #fff;
+  border: none;
+  font-size: .9em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn-search-pos{
+  text-align: right;
+  margin-right: 20px;
 }
