@@ -64,10 +64,10 @@
   height: 35px;
   color: #566062;
   background-color:  Transparent;
-  border: none;
+
 }
 
-.principal{
+.main{
   height: 1200px;
 }
 
@@ -78,17 +78,8 @@
 
 .gallery{
   background-color: #F3F3F3;
+  width: 1250px;
   height: 1200px;
-}
-
-.buttonX{
-  background-color: #666E70;
-  border: none;
-  margin-top: 50px;
-  border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  color: #fff;
 }
 
 .col-centered{
@@ -111,14 +102,14 @@
 }
 
 :focus {
-    outline: none !important;
+  outline: none !important;
 }
 
-.price, .floor, .space, .other{
+.price, .bathroom, .space, .other{
   margin-top: 30px;
 }
 
-.rooms, .extras{
+.owner, .extras{
   margin-top: 3px;
 }
 
@@ -151,14 +142,21 @@
   margin-top: 30px;
 }
 
-#slider-range{
+#slider-price{
   height: 7px;
   width: 300px;
   margin: auto;
   border: none;
 }
 
-.min-floor,.max-floor{
+#slider-bedroom{
+  height: 7px;
+  width: 300px;
+  margin: auto;
+  border: none;
+}
+
+.min-bedroom,.max-bedroom{
   width: 80px;
   height: 35px;
   background-color: #fff;
@@ -168,14 +166,20 @@
   margin-top: 30px;
 }
 
-.min-floor{
+.min-bedroom{
   margin-left: 80px;
   text-align: center;
 }
 
-.max-floor{
-  margin-right: 30px;
+.max-bedroom{
+  margin-right: 25px;
   text-align: center;
+}
+
+.label-bedroom{
+  color: #fff;
+  margin-top: 35px;
+  margin-right: 40px;
 }
 
 .label-eur{
@@ -194,12 +198,6 @@
  border: none;
  background: #4D5557 url("/images/br_down.png") no-repeat 60px center;
  background-color: Transparent;
-}
-
-.label-floor{
-  color: #fff;
-  margin-top: 35px;
-  margin-right: 60px;
 }
 
 .divisory{
@@ -314,28 +312,36 @@
   color: #09AEDC;
   padding-right: 100px;
   width: 150px;
-  height: 60px;
+  height: 40px;
   color: ##09AEDC;
   -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
    padding: 2px 2px 2px 2px;
-   border: none;
    background: #4D5557 url("/images/gray_down.png") no-repeat 120px center;
    background-color: Transparent;
+   border: none;
+}
+
+.type:hover{
+  cursor:pointer;
 }
 
 .city{
   color: #09AEDC;
   padding-right: 100px;
   width: 150px;
-  height: 60px;
+  height: 40px;
   color: ##09AEDC;
   -webkit-appearance: none;
    -moz-appearance: none;
    appearance: none;
    padding: 2px 2px 2px 2px;
-   border: none;
    background: #4D5557 url("/images/gray_down.png") no-repeat 100px center;
    background-color: Transparent;
+   border: none;
+}
+
+.city:hover{
+  cursor:pointer;
 }

@@ -15,13 +15,17 @@
   </head>
   <body>
     <div class="container-fluid">
-      <section class="row search-body">
+
+      <!-- search-body Section -->
+      <section class="search-body row">
         <div class="burguer col-sm-1"></div>
         <div class="logo col-sm-2">FASTEK</div>
         <div class="search col-sm-9">
           <input type="text" name="" value=""  placeholder="&#xF002;  Enter ID or search by street address">
         </div>
       </section>
+
+      <!-- Menu Section -->
       <section class="menu row">
         <div class="buttons col-sm-3">
           <button type="button" name="button" class="buy">Buy</button>
@@ -30,27 +34,37 @@
 
         <div class="types col-sm-3">
           <select name="type" class="type">
-             <option disabled selected >APARTMENTS</option>
-             <option>Dolar</option>
-             <option>Real</option>
+            <option disabled selected >Building Type</option>
+             <option>Residential</option>
+             <option>Recreational</option>
+             <option>Condo/Strata</option>
+             <option>Multi Family</option>
+             <option>Agriculture</option>
+             <option>Parking</option>
+             <option>Vacant Land</option>
            </select>
         </div>
 
         <div class="types col-sm-3">
-          <label>CITY:</label>
+          <label>City:</label>
           <select name="city" class="city">
-             <option disabled selected >NEW YORK</option>
-             <option>Dolar</option>
-             <option>Real</option>
+             <option disabled selected >Toronto</option>
+             <option>Mississauga</option>
+             <option>Vancouver</option>
            </select>
         </div>
 
-        <div class="district col-sm-3"></div>
+        <div class="district col-sm-3">
+        </div>
       </section>
-      <section class="principal row">
-        <div class="settings col-sm-3 col-centered ">
-          <button type="button" name="button" class="buttonX ">X</button>
 
+      <!-- Main Section -->
+      <section class="main row">
+
+        <!-- Settings Section -->
+        <div class="settings col-sm-3 col-centered ">
+
+          <!-- Dropdown Price -->
           <select name="price" class="select price mx-auto rounded">
             <option disabled selected ><p >Price</p></option>
             <option>Pizza</option>
@@ -60,6 +74,7 @@
             <option>Other</option>
           </select>
 
+          <!-- Range Price -->
           <div class="range-price row">
             <input class="min-price" id="min-price" />
             <div class="divisory mx-auto"></div>
@@ -72,24 +87,37 @@
           </div>
 
           <div class="range-interval">
-            <div id="slider-range"></div>
+            <div id="slider-price"></div>
           </div>
 
-          <select name="floor" class="select floor mx-auto rounded">
-            <option disabled selected ><p >Floor</p></option>
-            <option>Pizza</option>
-            <option>Grocerie</option>
-            <option>Bakery</option>
-            <option>Market</option>
-            <option>Other</option>
+          <!-- Dropdown Bathrooms -->
+          <select name="bathroom" class="select bathroom mx-auto rounded">
+            <option disabled selected ><p >Bathrooms</p></option>
+            <option>1</option>
+            <option>1+</option>
+            <option>2</option>
+            <option>2+</option>
+            <option>3</option>
+            <option>3+</option>
+            <option>4</option>
+            <option>4+</option>
+            <option>5</option>
+            <option>5+</option>
           </select>
 
-          <div class="range-floor row">
-            <input class="min-floor"/>
+          <!-- Range Bedrooms -->
+          <div class="range-bedroom row">
+            <input class="min-bedroom" id="min-bedroom" />
             <div class="divisory mx-auto"></div>
-            <input class="max-floor"/><span class="label-floor" >Floor</span>
+            <input class="max-bedroom" id="max-bedroom"/>
+            <span class="label-bedroom" >Bedroom</span>
           </div>
 
+          <div class="range-interval">
+            <div id="slider-bedroom"></div>
+          </div>
+
+          <!-- Dropdown Space(m2) -->
           <select name="space" class="select space mx-auto rounded">
             <option disabled selected ><p >Space (m2)</p></option>
             <option>Pizza</option>
@@ -99,15 +127,17 @@
             <option>Other</option>
           </select>
 
-          <select name="rooms" class="select rooms mx-auto rounded">
-            <option disabled selected ><p >Rooms</p></option>
-            <option>Pizza</option>
-            <option>Grocerie</option>
-            <option>Bakery</option>
-            <option>Market</option>
-            <option>Other</option>
+          <!-- Dropdown Ownership -->
+          <select name="owner" class="select owner mx-auto rounded">
+            <option disabled selected ><p >Ownership</p></option>
+            <option>Any</option>
+            <option>Freehold</option>
+            <option>Condo/Strata</option>
+            <option>Timeshare/Fractional</option>
+            <option>Leasehold</option>
           </select>
 
+          <!-- Dropdown Extras -->
           <select name="extras" class="select extras mx-auto rounded">
             <option disabled selected ><p >Extras</p></option>
             <option>Pizza</option>
@@ -117,6 +147,7 @@
             <option>Other</option>
           </select>
 
+          <!-- Checkbox Variety -->
           <div class="checkcol">
             <div class="checkbox">
               <div class="tag">Wi-Fi</div>
@@ -145,6 +176,7 @@
             </div>
           </div>
 
+            <!-- Dropdown Other -->
             <select name="other" class="select other mx-auto rounded">
               <option disabled selected ><p >Other</p></option>
               <option>Pizza</option>
@@ -154,6 +186,7 @@
               <option>Other</option>
             </select>
 
+            <!-- Dropdown Food delivery -->
             <select name="food-delivery" class="food-delivery mx-auto">
                <option disabled selected >Food delivery</option>
                <option>Pizza</option>
@@ -165,10 +198,15 @@
 
               <div class="hr"></div>
 
+              <!-- Button Search -->
               <div class="btn-search-pos"><button type="button" name="button" class="btn-search">SEARCH</button></div>
         </div>
-        <div class="gallery col-sm-9">
-        </div>
+        
+        <!-- Gallery Section -->
+        <section class="gallery">
+          <div class="photos ">
+          </div>
+        </section>
       </section>
     </div>
   </body>
