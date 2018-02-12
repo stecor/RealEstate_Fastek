@@ -21,7 +21,9 @@
         <div class="burguer col-sm-1"></div>
         <div class="logo col-sm-2">FASTEK</div>
         <div class="search col-sm-9">
-          <input type="text" name="" value=""  placeholder="&#xF002;  Enter ID or search by street address">
+          <input type="text" name="" value=""  placeholder="&#xF002; Enter ID or search by street address">
+          <!-- Button Search -->
+          <button type="button" name="button" class="btn-search btn-top">SEARCH</button>
         </div>
       </section>
 
@@ -64,17 +66,8 @@
         <!-- Settings Section -->
         <div class="settings col-sm-3 col-centered ">
 
-          <!-- Dropdown Price -->
-          <select name="view" class="select view mx-auto rounded">
-            <option disabled selected ><p >View</p></option>
-            <option>Any</option>
-            <option>City</option>
-            <option>Mountain</option>
-            <option>All Water Views</option>
-            <option>Ocean</option>
-            <option>Lake</option>
-            <option>River</option>
-          </select>
+          <!-- Dropdown Date -->
+       <input type="text" name="startdate" class="select other mx-auto rounded" id="start_datepicker" value="Listed Since"/>
 
           <!-- Range Price -->
           <div class="range-price row">
@@ -199,9 +192,17 @@
             </div>
           </div>
 
-            <!-- Dropdown Date -->
-         <input type="text" name="startdate" class="select other mx-auto rounded" id="start_datepicker" value="Listed Since"/>
-
+          <!-- Dropdown View -->
+          <select name="view" class="select view mx-auto rounded">
+            <option disabled selected ><p >View</p></option>
+            <option>Any</option>
+            <option>City</option>
+            <option>Mountain</option>
+            <option>All Water Views</option>
+            <option>Ocean</option>
+            <option>Lake</option>
+            <option>River</option>
+          </select>
 
             <!-- Dropdown Food delivery -->
             <select name="food-delivery" class="food-delivery mx-auto">
@@ -216,7 +217,7 @@
               <div class="hr"></div>
 
               <!-- Button Search -->
-              <div class="btn-search-pos"><button type="button" name="button" class="btn-search">SEARCH</button></div>
+              <div class="btn-search-pos"><button type="button" name="button" class="btn-search btn-bottom">SEARCH</button></div>
         </div>
 
         <!-- Gallery Section -->

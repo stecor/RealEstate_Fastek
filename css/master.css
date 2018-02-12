@@ -11,12 +11,14 @@
   padding: 30px;
 }
 
+
 .search input{
   border: 1px solid #DCDCDC;
   width: 400px;
-  border-radius: 5px;
-  margin-left: 200px;
   height: 40px;
+  border-radius: 5px;
+
+
   font-size: 1em;
   font-family: 'Helvetica', FontAwesome, sans-serif;
 }
@@ -246,7 +248,7 @@
 }
 
 .btn-search{
-  margin-top: 30px;
+
   width: 130px;
   height: 40px;
   border-radius: 5px;
@@ -255,6 +257,10 @@
   border: none;
   font-size: .9em;
   font-family: 'Open Sans', sans-serif;
+}
+
+.btn-bottom{
+  margin-top: 30px;
 }
 
 .btn-search-pos{
