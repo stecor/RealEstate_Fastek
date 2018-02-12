@@ -28,14 +28,14 @@
       <!-- Menu Section -->
       <section class="menu row">
         <div class="buttons col-sm-3">
-          <button type="button" name="button" class="buy">Buy</button>
-          <button type="button" name="button" class="rent">Rent</button>
+          <button type="button" name="button" id="buy">Buy</button>
+          <button type="button" name="button" id="rent">Rent</button>
         </div>
 
         <div class="types col-sm-3">
+          <label>Type :</label>
           <select name="type" class="type">
-            <option disabled selected >Building Type</option>
-             <option>Residential</option>
+             <option selected>Residential</option>
              <option>Recreational</option>
              <option>Condo/Strata</option>
              <option>Multi Family</option>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="types col-sm-3">
-          <label>City:</label>
+          <label>City :</label>
           <select name="city" class="city">
              <option disabled selected >Toronto</option>
              <option>Mississauga</option>
@@ -65,13 +65,15 @@
         <div class="settings col-sm-3 col-centered ">
 
           <!-- Dropdown Price -->
-          <select name="price" class="select price mx-auto rounded">
-            <option disabled selected ><p >Price</p></option>
-            <option>Pizza</option>
-            <option>Grocerie</option>
-            <option>Bakery</option>
-            <option>Market</option>
-            <option>Other</option>
+          <select name="view" class="select view mx-auto rounded">
+            <option disabled selected ><p >View</p></option>
+            <option>Any</option>
+            <option>City</option>
+            <option>Mountain</option>
+            <option>All Water Views</option>
+            <option>Ocean</option>
+            <option>Lake</option>
+            <option>River</option>
           </select>
 
           <!-- Range Price -->
@@ -79,11 +81,7 @@
             <input class="min-price" id="min-price" />
             <div class="divisory mx-auto"></div>
             <input class="max-price" id="max-price"/>
-            <select name="label-eur" class="label-eur">
-               <option disabled selected >Eur</option>
-               <option>Dolar</option>
-               <option>Real</option>
-             </select>
+              <span class="label-price" >Price</span>
           </div>
 
           <div class="range-interval">
@@ -107,24 +105,46 @@
 
           <!-- Range Bedrooms -->
           <div class="range-bedroom row">
-            <input class="min-bedroom" id="min-bedroom" />
+            <select name="min-bedroom" class="min-bedroom">
+               <option selected >1</option>
+               <option>1</option>
+               <option>1+</option>
+               <option>2</option>
+               <option>2+</option>
+               <option>3</option>
+               <option>3+</option>
+               <option>4</option>
+               <option>4+</option>
+               <option>5</option>
+               <option>5+</option>
+             </select>
             <div class="divisory mx-auto"></div>
-            <input class="max-bedroom" id="max-bedroom"/>
+            <select name="max-bedroom" class="max-bedroom">
+              <option selected >3</option>
+              <option>1</option>
+              <option>1+</option>
+              <option>2</option>
+              <option>2+</option>
+              <option>3</option>
+              <option>3+</option>
+              <option>4</option>
+              <option>4+</option>
+              <option>5</option>
+              <option>5+</option>
+             </select>
             <span class="label-bedroom" >Bedroom</span>
           </div>
 
-          <div class="range-interval">
-            <div id="slider-bedroom"></div>
-          </div>
-
-          <!-- Dropdown Space(m2) -->
-          <select name="space" class="select space mx-auto rounded">
-            <option disabled selected ><p >Space (m2)</p></option>
-            <option>Pizza</option>
-            <option>Grocerie</option>
-            <option>Bakery</option>
-            <option>Market</option>
-            <option>Other</option>
+          <!-- Dropdown Floor -->
+          <select name="floor" class="select floor mx-auto rounded">
+            <option disabled selected ><p>Floors</p></option>
+            <option>Any</option>
+            <option>1</option>
+            <option>1 or more</option>
+            <option>2</option>
+            <option>2 or more</option>
+            <option>3</option>
+            <option>3 or more</option>
           </select>
 
           <!-- Dropdown Ownership -->
@@ -139,12 +159,15 @@
 
           <!-- Dropdown Extras -->
           <select name="extras" class="select extras mx-auto rounded">
-            <option disabled selected ><p >Extras</p></option>
-            <option>Pizza</option>
-            <option>Grocerie</option>
-            <option>Bakery</option>
-            <option>Market</option>
-            <option>Other</option>
+            <option disabled selected ><p >Building Size</p></option>
+            <option>0,000 - 5,000 sqft</option>
+            <option>5,001 - 10,000 sqft</option>
+            <option>10,001 - 15,000 sqft</option>
+            <option>15,001 - 20,000 sqft</option>
+            <option>20,001 - 25,000 sqft</option>
+            <option>25,001 - 30,000 sqft</option>
+            <option>30,001 - 35,000 sqft</option>
+            <option>Over     35,000 sqft</option>
           </select>
 
           <!-- Checkbox Variety -->
@@ -152,39 +175,33 @@
             <div class="checkbox">
               <div class="tag">Wi-Fi</div>
               <input type="checkbox" class="input-assumpte" id="Wi-Fi">
-              <label for="Wi-Fi"></label>
+              <label for="Wi-Fi" class="check"></label>
             </div>
             <div class="checkbox">
               <div class="tag">jacuzzi</div>
               <input type="checkbox" class="input-assumpte" id="jacuzzi">
-              <label for="jacuzzi"></label>
+              <label for="jacuzzi" class="check"></label>
             </div>
             <div class="checkbox">
               <div class="tag">internet</div>
               <input type="checkbox" class="input-assumpte" id="internet">
-              <label for="internet"></label>
+              <label for="internet" class="check"></label>
             </div>
             <div class="checkbox">
               <div class="tag">fireplace</div>
               <input type="checkbox" class="input-assumpte" id="fireplace">
-              <label for="fireplace"></label>
+              <label for="fireplace" class="check"></label>
             </div>
             <div class="checkbox">
               <div class="tag">pool</div>
               <input type="checkbox" class="input-assumpte" id="pool">
-              <label for="pool"></label>
+              <label for="pool" class="check"></label>
             </div>
           </div>
 
-            <!-- Dropdown Other -->
-            <select name="other" class="select other mx-auto rounded">
-              <option disabled selected ><p >Other</p></option>
-              <option>Pizza</option>
-              <option>Grocerie</option>
-              <option>Bakery</option>
-              <option>Market</option>
-              <option>Other</option>
-            </select>
+            <!-- Dropdown Date -->
+         <input type="text" name="startdate" class="select other mx-auto rounded" id="start_datepicker" value="Listed Since"/>
+
 
             <!-- Dropdown Food delivery -->
             <select name="food-delivery" class="food-delivery mx-auto">
@@ -201,7 +218,7 @@
               <!-- Button Search -->
               <div class="btn-search-pos"><button type="button" name="button" class="btn-search">SEARCH</button></div>
         </div>
-        
+
         <!-- Gallery Section -->
         <section class="gallery">
           <div class="photos ">
